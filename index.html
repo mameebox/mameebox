@@ -24,7 +24,7 @@ var connection = new autobahn.Connection({
       });
 
 connection.onopen = function (session) {
-   session.call('print', ["hello"]);
+   session.call('printmessage', ["hello fidslqmjfdklmsq fjklmsdqjfkdlsmqjfkldmsqjfkdlsmqjfklmdsqjfklmsdqjl"]);
 };
 
 connection.open();

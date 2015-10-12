@@ -1,6 +1,6 @@
 
 
-from ..driver.proto import ThermalPrinter
+from mameebox.driver.proto import ThermalPrinter
 
 
 class Printer:

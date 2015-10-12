@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index,follow" />
+
+    <title>
+        Mameebox
+    </title>
+
+</head>
+
+<body>
+
+
+<script src="static/autobahn.min.js"></script>
+
+<script>
+var connection = new autobahn.Connection({
+         url: 'ws://demo.crossbar.io:8080',
+         realm: 'realm1'
+      });
+
+connection.onopen = function (session) {
+
+   session.call('add', [2, 3]).then(function (res) {
+         alert("Result:" + res);
+    });
+};
+
+connection.open();
+
+</script>
+
+</body>
+</html>
+

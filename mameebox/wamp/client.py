@@ -3,9 +3,9 @@ import sys
 
 from path import Path
 
-from wamplitude import App
+from .wamplitude import App
 
-from printer.adapter.proto import Printer
+from mameebox.printer.adapter.proto import Printer
 
 printer = Printer()
 
@@ -20,5 +20,3 @@ async def _(text):
 async def _(session):
     print('Connecté')
 
-
-app.run_cmd("ws://demo.crossbar.io:8080")

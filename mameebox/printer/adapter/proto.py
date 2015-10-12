@@ -1,6 +1,6 @@
 
 
-from mameebox.driver.proto import ThermalPrinter
+from mameebox.printer.driver.proto import ThermalPrinter
 
 
 class Printer:
@@ -10,4 +10,6 @@ class Printer:
 
     def print_text(self, *args, **kwargs):
         return self.driver.print_text(*args, **kwargs)
+
+
 

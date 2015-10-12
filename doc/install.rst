@@ -12,3 +12,9 @@ pip install crossbar
 
 # install dependancies
 pip install -r requirements.txt
+
+# clone the repo
+git clone https://github.com/mameebox/mameebox.git
+
+# install the mameebox package
+python setup.py install

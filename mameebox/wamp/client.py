@@ -11,10 +11,12 @@ printer = Printer()
 
 app = App()
 
-@app.register('print')
+@app.register('printmessage')
 async def _(text):
     printer.print_text(text)
-
+    printer.linefeed()
+    printer.linefeed()
+    printer.linefeed()
 
 @app.on('joined')
 async def _(session):

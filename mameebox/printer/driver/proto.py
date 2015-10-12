@@ -18,8 +18,9 @@ import serial, time
 # echo 1 > /sys/kernel/debug/omap_mux/spi0_d0
 #===========================================================#
 
-old_chr = chr
-chr = lambda x: x
+
+def chr(x):
+    return bytearray((x,))
 
 
 class ThermalPrinter(object):

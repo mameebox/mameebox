@@ -12,3 +12,5 @@ class Printer:
         msg = msg.encode('utf8')
         return self.driver.print_text(msg, *args, **kwargs)
 
+    def line_feed(self, *args, **kwargs):
+        return self.driver.line_feed(*args, **kwargs)

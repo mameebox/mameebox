@@ -13,10 +13,7 @@ app = App()
 
 @app.register('printmessage')
 async def _(text):
-    printer.print_text(text)
-    printer.linefeed()
-    printer.linefeed()
-    printer.linefeed()
+    printer.print_message(text)
 
 @app.on('joined')
 async def _(session):
